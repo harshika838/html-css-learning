@@ -1,0 +1,35 @@
+ .name{
+            display:block;
+            width:300px;
+            margin-bottom:10px;
+            display:block;
+        }
+
+        .email{
+            width:300px;
+        }
+        .para{
+            width:200px;
+            display:inline-block;
+            vertical-align: middle;
+        }
+        .img{
+            margin-top: 30px;;
+            height:100px;
+            margin-left: 500px;
+            margin-bottom:5px;
+            
+        }
+        
+        
+        .text-box{
+            border-radius: 5px;
+            border:white;
+            padding-top:5px;
+            padding-bottom:5px;
+            width:450px;
+            box-shadow:0 4px 12px rgba(0, 0, 0, 0.1) ;
+            display:block;
+            margin-left: 400px;
+            
+        }

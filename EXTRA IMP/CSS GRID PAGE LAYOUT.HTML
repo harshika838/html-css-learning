@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: grid;
+      /* Turn on grid */
+      
+      grid-template-columns: 250px 1fr;
+      /* 2 columns: 250px sidebar, 1fr content */
+      
+      grid-template-rows: 80px 1fr 60px;
+      /* 3 rows: 80px header, 1fr content, 60px footer */
+      
+      height: 100vh;
+      /* Make grid fill entire screen
+      min-height: 100vh; */
+      
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      /* Draw the layout visually */
+
+
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    
+    header {
+      grid-area: header;
+      /* Goes in "header" area */
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      overflow:hidden;   /* Prevents header from scrolling */
+    }
+    
+    sidebar {
+      grid-area: sidebar;
+      /* Goes in "sidebar" area */
+      background: #34495e;
+      color: white;
+      padding: 20px;
+      /* Sidebar can scroll if needed */
+    }
+    
+    main {
+      grid-area: main;
+      /* Goes in "main" area */
+      padding: 20px;
+      overflow-y: auto;
+      /* Only main content scrolls */
+    }
+    
+    footer {
+      grid-area: footer;
+      /* Goes in "footer" area */
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      overflow:hidden; /* Prevents header from scrolling */
+    }
+  </style>
+</head>
+<body>
+  <header>My Website Header</header>
+  <sidebar>Navigation Menu</sidebar>
+  <main>Main Content Goes Here
+    <p>Main Content Goes Here</p>
+    <p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p><p>Main Content Goes Here</p>
+  </main>
+  <footer>Footer</footer>
+</body>
+</html>
